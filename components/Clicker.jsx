@@ -5,7 +5,7 @@ function Clicker() {
     const [clicks, setClicks] = useState(0);
  
     return (
-        <View>
+        <View style={styles.container}>
             <Text style={styles.title}>Clicks: {clicks}</Text>
             <Button 
                 onPress={() => setClicks(clicks + 1)}
@@ -29,7 +29,13 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 40,
         marginBottom: 30,
-    }
+    },
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
 });
 
 export default Clicker;
