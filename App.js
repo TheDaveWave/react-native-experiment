@@ -5,7 +5,6 @@ import Clicker from './components/Clicker';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
       <Clicker />
       <StatusBar style="auto" />
     </View>
